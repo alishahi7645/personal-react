@@ -1,0 +1,281 @@
+.contact {
+    height: 155vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    font-family: vazir;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.contact-image {
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    position: absolute;
+    top: 40px;
+}
+
+.contact-image h1 {
+    color: black;
+    margin-top: 200px;
+}
+
+.contact-desc {
+    width: 63%;
+    height: 85vh;
+    background-color: #fff;
+    position: absolute;
+    top: 400px;
+}
+
+.contact-inputs {
+    display: flex;
+}
+
+.contact-inputs .input-field label {
+    position: relative;
+    right: 3px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'vazir';
+    font-size: 14px;
+}
+
+.contact-inputs .input-field input {
+    position: relative;
+    right: 3px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    margin-left: 20px;
+    height: 40px;
+    border: none;
+    border-bottom: 3px solid rgb(190, 189, 189);
+    font-family: 'vazir';
+}
+
+.contact button {
+    background: #FF8F00;
+    color: #fff;
+    padding: 10px 70px;
+    border: 2px solid #FF8F00;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    cursor: pointer;
+    font-family: 'vazir';
+    transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    position: absolute;
+    top: 226px;
+    right: 319px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: transparent;
+    color: #000;
+}
+
+.materialize-textarea {
+    width: 820px;
+    height: 70px;
+    position: absolute;
+    right: 5px;
+    top: 110px;
+    border: none;
+    border-bottom: 3px solid rgb(190, 189, 189);
+}
+
+
+
+
+
+
+.map {
+    width: 700px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.map-desc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+    top: 228px;
+    font-family: 'vazir';
+    font-size: 14px;
+}
+
+.map-desc .info p, h6 {
+    font-size: 14px;
+    color: rgb(94, 93, 93);
+}
+
+
+.social {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.social .social-desc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 238px;
+}
+
+.social .social-desc .social-info {
+    color: rgb(102, 96, 96);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.social .social-desc .social-info:hover {
+    color: rgb(29, 26, 26);
+}
+
+@media screen and (max-width:1200px) {
+    .contact-inputs .input-field input {
+        width: 320px;
+    }
+
+    .materialize-textarea {
+        width: 660px;
+    }
+
+    .map-desc {
+        width: 70%;
+    }
+
+    .contact-desc {
+        width: 71%;
+    }
+}
+@media screen and (max-width:976px) {
+    .contact-inputs .input-field input {
+        width: 280px;
+    }
+
+    .materialize-textarea {
+        width: 580px;
+    }
+
+    .map-desc {
+        width: 60%;
+    }
+
+    .contact-desc {
+        width: 76%;
+    }
+}
+@media screen and (max-width:800px) {
+    .contact-image{
+        width: 93%;
+    }
+    .social .social-desc{
+        width: 60%;
+    }
+    .contact-inputs .input-field input {
+        width: 220px;
+    }
+
+    .materialize-textarea {
+        width: 460px;
+    }
+    .map-desc {
+        width: 60%;
+        
+        position: absolute;
+        left: 216px;
+    }
+    .map{
+        width: 550px;
+    }
+}
+@media screen and (max-width:670px) {
+    .contact{
+        height: 190vh;
+    }
+    .contact button{
+        right: 169px;
+    }
+    .contact-inputs .input-field input {
+        width: 185px;
+    }
+
+    .materialize-textarea {
+        width: 390px;
+    }
+    .map-desc{
+        width: 140px;
+        display: inline-block;
+    }
+    .map{
+        width: 500px;
+    }
+    .contact-desc{
+        height: 120vh;
+    }
+    .social .social-desc{
+        top: 460px;
+    }
+}
+@media screen and (max-width:570px) {
+    .map{
+        width: 350px;
+    }
+    .map-desc{
+        left: 100px;
+    }
+    .contact-desc{
+        width: 86%;
+    }
+}
+@media screen and (max-width:470px) {
+    .map{
+        width: 300px;
+    }
+    .contact-inputs .input-field input {
+        width: 140px;
+    }
+
+    .materialize-textarea {
+        width: 300px;
+    }
+
+    .contact button{
+        right: 108px;
+    }
+}
